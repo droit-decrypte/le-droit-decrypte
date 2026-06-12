@@ -69,9 +69,3 @@ footer{
 import Image from "next/image";
 
 <Image src="/logo.png" width={120} height={60} alt="logo" />
-.logo{
-    width:220px;
-    display:block;
-    margin:0 auto 20px auto;
-    filter:drop-shadow(0 5px 15px rgba(0,0,0,0.3));
-}
