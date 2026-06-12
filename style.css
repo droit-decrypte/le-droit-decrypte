@@ -66,6 +66,9 @@ footer{
     text-align:center;
     padding:25px;
 }
+import Image from "next/image";
+
+<Image src="/logo.png" width={120} height={60} alt="logo" />
 .logo{
     width:220px;
     display:block;
