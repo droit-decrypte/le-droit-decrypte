@@ -141,16 +141,19 @@ nav{
 }
 
 .apropos{
-    background:white;
     padding:60px 20px;
 }
 
 .apropos h2{
-    color:#071A52;
+    color:#D4AF37;
 }
 
 .apropos p{
-    color:#000000 !important;
-    font-size:1.1rem;
+    color:#f5f5f5;
     text-align:center;
+    font-size:1.15rem;
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+    font-style:italic;
 }
