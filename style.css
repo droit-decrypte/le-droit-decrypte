@@ -12,7 +12,12 @@ body{
 }
 
 header{
-    background:#071A52;
+    background:linear-gradient(
+135deg,
+#04133f,
+#071A52,
+#0d2f7a
+);
     color:white;
     text-align:center;
     padding:80px 20px;
@@ -72,4 +77,64 @@ footer{
     display:block;
     margin:0 auto 20px auto;
     filter:drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+}
+
+/* Navigation */
+
+nav{
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nav-logo{
+    font-weight:bold;
+    color:#071A52;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#071A52;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#D4AF37;
+}
+
+/* Bouton */
+
+.btn-gold{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 28px;
+    background:#D4AF37;
+    color:#071A52;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-gold:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(212,175,55,0.4);
 }
