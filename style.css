@@ -139,3 +139,7 @@ nav{
     transform:translateY(-3px);
     box-shadow:0 8px 20px rgba(212,175,55,0.4);
 }
+
+section p{
+    color:#333;
+}
