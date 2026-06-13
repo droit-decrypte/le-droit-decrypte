@@ -59,6 +59,7 @@ h2{
     width:250px;
     box-shadow:0 4px 15px rgba(0,0,0,0.08);
     transition:0.3s;
+    color:#071A52;
 }
 
 .card:hover{
