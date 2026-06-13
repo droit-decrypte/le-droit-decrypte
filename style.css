@@ -140,10 +140,17 @@ nav{
     box-shadow:0 8px 20px rgba(212,175,55,0.4);
 }
 
-.apropos p{
-    text-align:center;
+.apropos{
+    background:white;
+    padding:60px 20px;
+}
+
+.apropos h2{
     color:#071A52;
+}
+
+.apropos p{
+    color:#000000 !important;
     font-size:1.1rem;
-    max-width:800px;
-    margin:auto;
+    text-align:center;
 }
