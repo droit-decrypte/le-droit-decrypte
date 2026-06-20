@@ -5,6 +5,18 @@
 }
 
 body{
+    background:#F4F0E6 !important;
+    color:#071A52 !important;
+    font-family:'Inter', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     background:#F4F0E6;
     color:#071A52;
 }
