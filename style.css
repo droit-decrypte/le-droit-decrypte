@@ -74,10 +74,10 @@ footer{
 }
 
 .logo{
-    width:220px;
+    width:280px;
     display:block;
-    margin:0 auto 20px auto;
-    filter:drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+    margin:0 auto 30px auto;
+    filter:drop-shadow(0 10px 25px rgba(0,0,0,0.25));
 }
 
 /* Navigation */
