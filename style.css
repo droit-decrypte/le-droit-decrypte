@@ -12,9 +12,23 @@ body{
     line-height:1.6;
 
     background:
-    radial-gradient(circle at 20% 10%, rgba(199,154,59,0.10), transparent 45%),
-    radial-gradient(circle at 80% 90%, rgba(7,26,82,0.08), transparent 50%),
-    linear-gradient(180deg, #FFFCF6 0%, #F4EFE6 100%);
+    /* texture papier ultra subtile */
+    repeating-linear-gradient(
+        0deg,
+        rgba(0,0,0,0.015) 0px,
+        rgba(0,0,0,0.015) 1px,
+        transparent 1px,
+        transparent 3px
+    ),
+
+    /* lumière dorée diffuse (haut gauche) */
+    radial-gradient(circle at 15% 10%, rgba(199,154,59,0.18), transparent 50%),
+
+    /* lumière bleue institutionnelle (bas droite) */
+    radial-gradient(circle at 85% 90%, rgba(7,26,82,0.14), transparent 55%),
+
+    /* base papier premium */
+    linear-gradient(180deg, #FFFDF8 0%, #F2EDE4 100%);
 }
 
 /* NAVBAR */
