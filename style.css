@@ -9,13 +9,20 @@ body{
     background:
     radial-gradient(
         circle at top,
-        rgba(7,26,82,0.08),
-        transparent 40%
+        rgba(200,155,60,0.12),
+        transparent 30%
     ),
+
+    radial-gradient(
+        circle at bottom right,
+        rgba(7,26,82,0.08),
+        transparent 35%
+    ),
+
     linear-gradient(
         180deg,
-        #F8F5EE 0%,
-        #F1EBDC 100%
+        #FCFAF5 0%,
+        #F5EFE5 100%
     );
 
     color:#071A52;
@@ -165,9 +172,8 @@ footer{
 }
 
 .logo{
-    width:60px;
+    width:90px;
     height:auto;
-    opacity:0.95;
 }
 
 .featured{
