@@ -1,10 +1,11 @@
-/* BASE */
+/* RESET */
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+/* BODY - FOND ÉLÉGANT */
 body{
     font-family:'Inter', sans-serif;
     color:#0B1F3A;
@@ -21,17 +22,15 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-
     padding:20px 60px;
 
-    background:rgba(255,255,255,0.85);
-    backdrop-filter:blur(10px);
+    background:rgba(255,255,255,0.8);
+    backdrop-filter:blur(12px);
 
-    border-bottom:1px solid rgba(200,155,60,0.15);
+    border-bottom:1px solid rgba(0,0,0,0.06);
 
     position:sticky;
     top:0;
-    z-index:1000;
 }
 
 .nav-logo{
@@ -49,7 +48,6 @@ body{
 .navbar a{
     text-decoration:none;
     color:#0B1F3A;
-    font-weight:500;
 }
 
 .navbar a:hover{
@@ -60,26 +58,25 @@ body{
 .hero{
     text-align:center;
     padding:120px 20px 80px;
-    position:relative;
 }
 
 .hero-tag{
     color:#C79A3B;
-    letter-spacing:4px;
+    letter-spacing:3px;
     text-transform:uppercase;
-    font-size:13px;
-    margin-bottom:20px;
+    font-size:12px;
 }
 
 .hero h1{
-    font-size:60px;
+    font-size:64px;
     font-family:'Cormorant Garamond', serif;
+    margin-top:15px;
 }
 
 .subtitle{
     max-width:600px;
     margin:20px auto;
-    opacity:0.8;
+    opacity:0.75;
 }
 
 /* BUTTONS */
@@ -90,24 +87,25 @@ body{
 .btn-gold{
     background:#C79A3B;
     color:white;
-    padding:12px 20px;
+    padding:12px 18px;
     border-radius:6px;
     text-decoration:none;
+    margin-right:10px;
 }
 
 .btn-light{
     border:1px solid #0B1F3A;
     color:#0B1F3A;
-    padding:12px 20px;
+    padding:12px 18px;
     border-radius:6px;
     text-decoration:none;
 }
 
-/* FEATURED */
+/* À LA UNE */
 .featured{
-    padding:80px 60px;
     max-width:1100px;
     margin:auto;
+    padding:80px 20px;
 }
 
 .featured h2{
@@ -119,12 +117,12 @@ body{
 .featured-container{
     display:grid;
     grid-template-columns:2fr 1fr;
-    gap:30px;
+    gap:25px;
 }
 
 .main-article{
     background:white;
-    padding:30px;
+    padding:25px;
     border-radius:12px;
     border:1px solid rgba(0,0,0,0.05);
 }
@@ -132,16 +130,16 @@ body{
 .side-articles article{
     background:white;
     padding:15px;
-    margin-bottom:15px;
+    margin-bottom:12px;
     border-radius:10px;
     border:1px solid rgba(0,0,0,0.05);
 }
 
-/* CARDS */
+/* MISSIONS */
 .cards-section{
-    padding:80px 60px;
     max-width:1100px;
     margin:auto;
+    padding:80px 20px;
 }
 
 .cards-section h2{
@@ -152,8 +150,8 @@ body{
 
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
 }
 
 .card{
@@ -164,26 +162,27 @@ body{
     text-align:center;
 }
 
+/* ABOUT */
 .about{
     max-width:900px;
     margin:100px auto 60px;
     padding:40px;
-
     background:white;
     border-radius:12px;
-
     border:1px solid rgba(0,0,0,0.05);
-
     text-align:center;
 }
 
 .about h2{
     font-family:'Cormorant Garamond', serif;
-    font-size:32px;
+    font-size:30px;
     margin-bottom:15px;
 }
 
-.about p{
-    opacity:0.8;
-    line-height:1.7;
+/* FOOTER */
+.footer{
+    text-align:center;
+    padding:40px;
+    font-size:14px;
+    opacity:0.6;
 }
