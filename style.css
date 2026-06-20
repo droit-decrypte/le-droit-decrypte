@@ -34,7 +34,7 @@ body{
 /* HERO */
 .hero{
     text-align:center;
-    padding:120px 20px;
+    padding:100px 20px;
 }
 
 .hero h1{
@@ -42,17 +42,53 @@ body{
 }
 
 .subtitle{
-    max-width:600px;
-    margin:20px auto;
+    margin-top:10px;
+    opacity:0.8;
 }
 
-/* BUTTON */
-.cta-button{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 24px;
+/* BUTTONS */
+.hero-buttons{
+    margin-top:25px;
+}
+
+.btn-gold{
     background:#C79A3B;
     color:white;
+    padding:12px 20px;
+    text-decoration:none;
+    margin-right:10px;
+    border-radius:6px;
+}
+
+.btn-light{
+    border:1px solid #071A52;
+    color:#071A52;
+    padding:12px 20px;
     text-decoration:none;
     border-radius:6px;
+}
+
+/* SECTIONS */
+section{
+    padding:60px 40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    opacity:0.7;
 }
