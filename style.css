@@ -5,13 +5,24 @@
     box-sizing:border-box;
 }
 
-/* BODY - FOND ÉLÉGANT */
+/* FOND GLOBAL (ÉLÉGANT ET SOBRE) */
 body{
     font-family:'Inter', sans-serif;
     color:#1A2433;
-    line-height:1.7;
+    background:#F3F1EC;
+    line-height:1.6;
+}
 
-    background:#F7F5F0;
+/* PAGE CENTRALE (EFFET REVUE) */
+.page{
+    max-width:1100px;
+    margin:40px auto;
+    background:white;
+    border-radius:18px;
+
+    box-shadow:0 25px 70px rgba(0,0,0,0.08);
+
+    padding:60px;
 }
 
 /* NAVBAR */
@@ -19,21 +30,13 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 60px;
-
-    background:rgba(255,255,255,0.8);
-    backdrop-filter:blur(12px);
-
-    border-bottom:1px solid rgba(0,0,0,0.06);
-
-    position:sticky;
-    top:0;
+    margin-bottom:60px;
 }
 
-.nav-logo{
+.logo{
     font-family:'Cormorant Garamond', serif;
-    font-size:22px;
-    font-weight:700;
+    font-size:24px;
+    font-weight:600;
 }
 
 .navbar ul{
@@ -44,153 +47,139 @@ body{
 
 .navbar a{
     text-decoration:none;
-    color:#0B1F3A;
+    color:#1A2433;
+    font-weight:500;
+    opacity:0.8;
 }
 
 .navbar a:hover{
-    color:#C79A3B;
+    opacity:1;
 }
 
 /* HERO */
 .hero{
     text-align:center;
-    padding:120px 20px 80px;
+    margin-bottom:80px;
 }
 
-.hero-tag{
-    color:#C79A3B;
-    letter-spacing:3px;
+.tagline{
     text-transform:uppercase;
+    letter-spacing:3px;
     font-size:12px;
+    color:#A8893A;
 }
 
 .hero h1{
-    font-size:64px;
     font-family:'Cormorant Garamond', serif;
-    margin-top:15px;
+    font-size:56px;
+    margin:15px 0;
 }
 
 .subtitle{
     max-width:600px;
-    margin:20px auto;
-    opacity:0.75;
+    margin:0 auto 25px;
+    opacity:0.7;
 }
 
-/* BUTTONS */
-.hero-buttons{
-    margin-top:25px;
+/* BOUTONS */
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
 }
 
-.btn-gold{
-    background:#C79A3B;
+.btn{
+    padding:12px 18px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.primary{
+    background:#1A2433;
     color:white;
-    padding:12px 18px;
-    border-radius:6px;
-    text-decoration:none;
-    margin-right:10px;
 }
 
-.btn-light{
-    border:1px solid #0B1F3A;
-    color:#0B1F3A;
-    padding:12px 18px;
-    border-radius:6px;
-    text-decoration:none;
+.secondary{
+    border:1px solid #1A2433;
+    color:#1A2433;
 }
 
 /* À LA UNE */
 .featured{
-    max-width:1100px;
-    margin:auto;
-    padding:80px 20px;
+    margin-bottom:80px;
 }
 
 .featured h2{
-    font-size:32px;
-    margin-bottom:30px;
     font-family:'Cormorant Garamond', serif;
+    font-size:34px;
+    margin-bottom:25px;
 }
 
-.featured-container{
+.grid{
     display:grid;
     grid-template-columns:2fr 1fr;
-    gap:25px;
-}
-
-.main-article{
-    background:white;
-    padding:25px;
-    border-radius:12px;
-    border:1px solid rgba(0,0,0,0.05);
-}
-
-.side-articles article{
-    background:white;
-    padding:15px;
-    margin-bottom:12px;
-    border-radius:10px;
-    border:1px solid rgba(0,0,0,0.05);
-}
-
-/* MISSIONS */
-.cards-section{
-    max-width:1100px;
-    margin:auto;
-    padding:80px 20px;
-}
-
-.cards-section h2{
-    font-size:32px;
-    margin-bottom:30px;
-    font-family:'Cormorant Garamond', serif;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
     gap:20px;
 }
 
-.card{
-    background:white;
-    padding:30px;
+.main{
+    padding:25px;
+    border:1px solid #EAE7E0;
     border-radius:12px;
-    border:1px solid rgba(0,0,0,0.05);
-    text-align:center;
 }
 
-.page{
-    max-width:1100px;
-    margin:40px auto;
-    background:white;
-    border-radius:18px;
+.side article{
+    padding:15px;
+    border:1px solid #EAE7E0;
+    border-radius:10px;
+    margin-bottom:10px;
+}
 
-    box-shadow:0 20px 60px rgba(0,0,0,0.06);
+/* CARTES */
+.cards{
+    margin-bottom:80px;
+}
 
-    padding:60px;
+.cards h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:34px;
+    margin-bottom:25px;
+}
+
+.cards-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.card{
+    padding:25px;
+    border:1px solid #EAE7E0;
+    border-radius:12px;
+    text-align:center;
 }
 
 /* ABOUT */
 .about{
-    max-width:900px;
-    margin:100px auto 60px;
-    padding:40px;
-    background:white;
-    border-radius:12px;
-    border:1px solid rgba(0,0,0,0.05);
     text-align:center;
+    margin-bottom:60px;
 }
 
 .about h2{
     font-family:'Cormorant Garamond', serif;
-    font-size:30px;
+    font-size:32px;
     margin-bottom:15px;
+}
+
+.about p{
+    max-width:700px;
+    margin:0 auto;
+    opacity:0.7;
 }
 
 /* FOOTER */
 .footer{
     text-align:center;
-    padding:40px;
+    opacity:0.5;
     font-size:14px;
-    opacity:0.6;
 }
