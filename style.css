@@ -11,13 +11,8 @@ body{
     line-height:1.6;
 
     background:
-    /* lumière dorée subtile en haut */
-    radial-gradient(circle at 20% 10%, rgba(199,154,59,0.12), transparent 40%),
-
-    /* lumière bleu profond en bas */
-    radial-gradient(circle at 80% 90%, rgba(7,26,82,0.10), transparent 45%),
-
-    /* voile crème élégant (effet papier) */
+    radial-gradient(circle at 20% 10%, rgba(199,154,59,0.10), transparent 45%),
+    radial-gradient(circle at 80% 90%, rgba(7,26,82,0.08), transparent 50%),
     linear-gradient(180deg, #FFFCF6 0%, #F4EFE6 100%);
 }
 
