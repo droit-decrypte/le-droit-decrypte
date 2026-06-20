@@ -6,7 +6,12 @@
 }
 
 body{
-    background:#F4F0E6;
+    background: linear-gradient(
+        135deg,
+        #F4F0E6 0%,
+        #EFE7D6 50%,
+        #F7F2E7 100%
+    );
     color:#071A52;
     font-family:'Inter', sans-serif;
     line-height:1.6;
