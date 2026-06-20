@@ -1,185 +1,141 @@
-/* RESET */
+/* BASE */
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-/* FOND GLOBAL (ÉLÉGANT ET SOBRE) */
 body{
     font-family:'Inter', sans-serif;
-    color:#1A2433;
-    background:#F3F1EC;
+    background:#F6F6F4;
+    color:#111;
     line-height:1.6;
 }
 
-/* PAGE CENTRALE (EFFET REVUE) */
-.page{
+/* CONTAINER CENTRAL */
+.container{
     max-width:1100px;
-    margin:40px auto;
-    background:white;
-    border-radius:18px;
-
-    box-shadow:0 25px 70px rgba(0,0,0,0.08);
-
-    padding:60px;
+    margin:0 auto;
+    padding:80px 40px;
 }
 
-/* NAVBAR */
-.navbar{
+/* HEADER MINIMAL */
+.header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin-bottom:60px;
+    margin-bottom:120px;
 }
 
 .logo{
     font-family:'Cormorant Garamond', serif;
-    font-size:24px;
-    font-weight:600;
+    font-size:22px;
+    letter-spacing:0.5px;
 }
 
-.navbar ul{
+.header nav{
     display:flex;
     gap:25px;
-    list-style:none;
 }
 
-.navbar a{
+.header nav a{
     text-decoration:none;
-    color:#1A2433;
-    font-weight:500;
-    opacity:0.8;
+    color:#111;
+    font-size:14px;
+    opacity:0.7;
 }
 
-.navbar a:hover{
+.header nav a:hover{
     opacity:1;
 }
 
-/* HERO */
+/* HERO ULTRA MINIMAL */
 .hero{
     text-align:center;
-    margin-bottom:80px;
+    margin-bottom:120px;
 }
 
-.tagline{
-    text-transform:uppercase;
-    letter-spacing:3px;
+.eyebrow{
     font-size:12px;
-    color:#A8893A;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    opacity:0.5;
 }
 
 .hero h1{
     font-family:'Cormorant Garamond', serif;
-    font-size:56px;
-    margin:15px 0;
-}
-
-.subtitle{
-    max-width:600px;
-    margin:0 auto 25px;
-    opacity:0.7;
-}
-
-/* BOUTONS */
-.buttons{
-    display:flex;
-    justify-content:center;
-    gap:12px;
-}
-
-.btn{
-    padding:12px 18px;
-    border-radius:8px;
-    text-decoration:none;
+    font-size:54px;
     font-weight:500;
+    margin:20px 0;
 }
 
-.primary{
-    background:#1A2433;
+.sub{
+    max-width:600px;
+    margin:0 auto 30px;
+    opacity:0.6;
+}
+
+.cta{
+    display:inline-block;
+    padding:12px 22px;
+    border:1px solid #111;
+    text-decoration:none;
+    color:#111;
+    font-size:14px;
+    letter-spacing:1px;
+    transition:all 0.3s ease;
+}
+
+.cta:hover{
+    background:#111;
     color:white;
 }
 
-.secondary{
-    border:1px solid #1A2433;
-    color:#1A2433;
-}
-
-/* À LA UNE */
-.featured{
-    margin-bottom:80px;
-}
-
-.featured h2{
-    font-family:'Cormorant Garamond', serif;
-    font-size:34px;
-    margin-bottom:25px;
-}
-
+/* GRID TYPE CABINET */
 .grid{
     display:grid;
     grid-template-columns:2fr 1fr;
     gap:20px;
+    margin-bottom:120px;
 }
 
-.main{
-    padding:25px;
-    border:1px solid #EAE7E0;
-    border-radius:12px;
-}
-
-.side article{
-    padding:15px;
-    border:1px solid #EAE7E0;
-    border-radius:10px;
-    margin-bottom:10px;
-}
-
-/* CARTES */
-.cards{
-    margin-bottom:80px;
-}
-
-.cards h2{
-    font-family:'Cormorant Garamond', serif;
-    font-size:34px;
-    margin-bottom:25px;
-}
-
-.cards-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:15px;
-}
-
+/* CARTES ULTRA CLEAN */
 .card{
-    padding:25px;
-    border:1px solid #EAE7E0;
-    border-radius:12px;
-    text-align:center;
+    border:1px solid rgba(0,0,0,0.08);
+    padding:30px;
+    background:white;
 }
 
-/* ABOUT */
+.card.large{
+    grid-row:span 2;
+}
+
+.card h2, .card h3{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+}
+
+/* ABOUT MINIMAL */
 .about{
     text-align:center;
-    margin-bottom:60px;
+    margin-bottom:120px;
 }
 
 .about h2{
     font-family:'Cormorant Garamond', serif;
-    font-size:32px;
-    margin-bottom:15px;
+    font-size:30px;
+    margin-bottom:10px;
 }
 
 .about p{
-    max-width:700px;
+    opacity:0.6;
+    max-width:600px;
     margin:0 auto;
-    opacity:0.7;
 }
 
 /* FOOTER */
 .footer{
     text-align:center;
-    opacity:0.5;
-    font-size:14px;
+    font-size:12px;
+    opacity:0.4;
 }
