@@ -157,3 +157,32 @@ nav{
     line-height:1.8;
     font-style:italic;
 }
+
+.subtitle{
+    margin-top:15px;
+    color:#f5f5f5;
+    font-size:1.1rem;
+}
+
+.hero-buttons{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-light{
+    display:inline-block;
+    padding:14px 28px;
+    background:white;
+    color:#071A52;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-light:hover{
+    transform:translateY(-3px);
+}
