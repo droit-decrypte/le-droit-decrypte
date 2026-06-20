@@ -6,12 +6,18 @@
 }
 
 body{
-    background: linear-gradient(
-        135deg,
-        #F4F0E6 0%,
-        #EFE7D6 50%,
-        #F7F2E7 100%
+    background:
+    radial-gradient(
+        circle at top,
+        rgba(7,26,82,0.08),
+        transparent 40%
+    ),
+    linear-gradient(
+        180deg,
+        #F8F5EE 0%,
+        #F1EBDC 100%
     );
+
     color:#071A52;
     font-family:'Inter', sans-serif;
     line-height:1.6;
@@ -19,10 +25,15 @@ body{
 
 /* NAV */
 .navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 50px;
+    background:rgba(255,255,255,0.55);
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid rgba(7,26,82,0.08);
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
 }
 
 .nav-logo{
@@ -55,7 +66,8 @@ body{
 }
 
 .hero h1{
-    font-size:58px;
+    font-size:52px;
+    font-weight:700;
     letter-spacing:-1px;
 }
 
