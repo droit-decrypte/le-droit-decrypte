@@ -91,23 +91,23 @@ nav{
 }
 
 .nav-container{
-    max-width:1200px;
-    margin:auto;
-    padding:15px 30px;
+    width:100%;
+    padding:15px 50px;
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
 
 .nav-logo{
-    font-weight:bold;
+    font-size:1.2rem;
+    font-weight:700;
     color:#071A52;
 }
 
 .nav-links{
     display:flex;
     list-style:none;
-    gap:30px;
+    gap:40px;
 }
 
 .nav-links a{
