@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">    
-<title>Le Droit Décrypté</title>
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Le Droit Décrypté</title>
 
-<link rel="stylesheet" href="style.css">
+    <!-- Polices -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav class="navbar">
-    <div class="nav-logo">⚖️ Le Droit Décrypté</div>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-logo">Le Droit Décrypté</div>
 
     <ul>
         <li><a href="#">Accueil</a></li>
@@ -24,106 +26,67 @@
         <li><a href="#">Actualités</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
-</nav>
-
-<header class="hero">
-
-<img src="logo.png" alt="Le Droit Décrypté" class="logo">
-
-<p class="hero-tag">
-Revue juridique • Actualités • Étudiants
-</p>
-
-<h1>Le Droit Décrypté</h1>
-
-<p>
-    Comprendre le droit simplement, sans jargon.
-</p>
-
-<p class="subtitle">
-    Articles, fiches de révision et actualités juridiques accessibles à tous.
-</p>
-
-<div class="hero-buttons">
-    <a href="#" class="btn-gold">Découvrir les articles</a>
-    <a href="#" class="btn-light">Espace étudiant</a>
-</div>
-
 </header>
 
-    <section class="featured">
+<!-- HERO -->
+<section class="hero">
+    <p class="hero-tag">Comprendre le droit simplement, sans jargon.</p>
+
+    <h1>Le Droit Décrypté</h1>
+
+    <p class="subtitle">
+        Articles, fiches de révision et actualités juridiques accessibles à tous.
+    </p>
+
+    <div class="hero-buttons">
+        <a class="btn-gold" href="#">Découvrir les articles</a>
+        <a class="btn-light" href="#">Espace étudiant</a>
+    </div>
+</section>
+
+<!-- À LA UNE -->
+<section class="featured">
     <h2>À la Une</h2>
 
     <div class="featured-container">
 
-        <article class="main-article">
-            <h3>Comprendre le rôle du Conseil d'État</h3>
+        <div class="main-article">
+            <h3>Comprendre le rôle du Conseil d’État</h3>
             <p>
-                Analyse simple et claire du rôle du juge administratif suprême en France.
+                Analyse simple et claire du rôle du juge administratif suprême en France,
+                ses compétences et son importance dans l’État de droit.
             </p>
-        </article>
+        </div>
 
         <div class="side-articles">
-            <article>
-                <h4>Le recours pour excès de pouvoir</h4>
-            </article>
-
-            <article>
-                <h4>Les grands principes du droit administratif</h4>
-            </article>
-
-            <article>
-                <h4>Focus : la hiérarchie des normes</h4>
-            </article>
+            <article>Excès de pouvoir : définition et enjeux</article>
+            <article>Principes fondamentaux du droit administratif</article>
+            <article>Hiérarchie des normes expliquée simplement</article>
         </div>
 
     </div>
 </section>
-    
-<section>
+
+<!-- MISSIONS / CARTES -->
+<section class="cards-section">
     <h2>Notre mission</h2>
 
     <div class="cards">
+
         <div class="card">
-            <h3>📖 Vulgariser le droit</h3>
-            <p>Rendre les notions juridiques accessibles à tous.</p>
+            Vulgariser le droit
         </div>
 
         <div class="card">
-            <h3>🎓 Accompagner les étudiants</h3>
-            <p>Fiches de révision, méthodologie et conseils pratiques.</p>
+            Accompagner les étudiants
         </div>
 
         <div class="card">
-            <h3>⚖️ Décrypter l'actualité juridique</h3>
-            <p>Comprendre les décisions et les évolutions du droit.</p>
+            Décrypter l’actualité juridique
         </div>
+
     </div>
 </section>
-
-<section>
-    <h2>Nos domaines</h2>
-
-    <div class="cards">
-        <div class="card">Droit civil</div>
-        <div class="card">Droit administratif</div>
-        <div class="card">Droit du travail</div>
-        <div class="card">Droit commercial</div>
-    </div>
-</section>
-
-<section class="apropos">
-    <h2>À propos</h2>
-
-    <p>
-        Le Droit Décrypté est un projet de vulgarisation juridique
-        destiné à rendre le droit plus clair, plus accessible et plus compréhensible.
-    </p>
-</section>
-
-<footer>
-    © 2026 Le Droit Décrypté
-</footer>
 
 </body>
 </html>
