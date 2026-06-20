@@ -1,11 +1,58 @@
-body{
-    background:#F4F0E6;
-    color:#071A52;
-    font-family:'Inter', sans-serif;
-}
-
+/* BASE */
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+}
+
+body{
+    background:#F4F0E6;
+    color:#071A52;
+    font-family:'Inter', sans-serif;
+    line-height:1.6;
+}
+
+/* NAV */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+}
+
+.navbar ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#071A52;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:52px;
+}
+
+.subtitle{
+    max-width:600px;
+    margin:20px auto;
+}
+
+/* BUTTON */
+.cta-button{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 24px;
+    background:#C79A3B;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
 }
