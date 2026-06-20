@@ -8,27 +8,10 @@
 /* BODY - FOND ÉLÉGANT */
 body{
     font-family:'Inter', sans-serif;
-    color:#0B1F3A;
-    line-height:1.6;
+    color:#1A2433;
+    line-height:1.7;
 
-    background:
-    /* texture papier ultra subtile */
-    repeating-linear-gradient(
-        0deg,
-        rgba(0,0,0,0.015) 0px,
-        rgba(0,0,0,0.015) 1px,
-        transparent 1px,
-        transparent 3px
-    ),
-
-    /* lumière dorée diffuse (haut gauche) */
-    radial-gradient(circle at 15% 10%, rgba(199,154,59,0.18), transparent 50%),
-
-    /* lumière bleue institutionnelle (bas droite) */
-    radial-gradient(circle at 85% 90%, rgba(7,26,82,0.14), transparent 55%),
-
-    /* base papier premium */
-    linear-gradient(180deg, #FFFDF8 0%, #F2EDE4 100%);
+    background:#F7F5F0;
 }
 
 /* NAVBAR */
@@ -174,6 +157,17 @@ body{
     border-radius:12px;
     border:1px solid rgba(0,0,0,0.05);
     text-align:center;
+}
+
+.page{
+    max-width:1100px;
+    margin:40px auto;
+    background:white;
+    border-radius:18px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,0.06);
+
+    padding:60px;
 }
 
 /* ABOUT */
